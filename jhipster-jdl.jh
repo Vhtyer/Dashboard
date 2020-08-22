@@ -1,0 +1,62 @@
+/**
+ *
+ * The investor Entity.
+ */
+entity Investor {
+    //id            Long, 
+	pais          String,
+    addresswallet String,
+	firstname     String,
+    lastname      String,
+	phoneNumber   String,
+    fatherid      Long
+}
+
+/**
+ *
+ * The investment Entity.
+ */
+entity Investment {
+    //id                    Long, 
+    nature                String required maxlength(1), //I or O
+    dateCreation          Instant,
+    valueUs               BigDecimal,
+    valueDollar           BigDecimal, 
+	addresswallet         String required,
+    depositEth            BigDecimal,
+    bonusEth              BigDecimal,
+    idchild               Long,                
+    profitEth             BigDecimal,
+    consolidationvalueEth BigDecimal,
+    refidchild            Long,
+    //refidfather           Long
+}
+
+/**
+ *
+ * The Summary Entity.
+ */
+entity Summary {
+    //id                    Long,
+    nature                String required maxlength(1), //I or O
+	dateCreation          Instant,
+    bonusEth              BigDecimal,
+    bonusDollar           BigDecimal,
+    depositEth            BigDecimal,
+    depositDollar         BigDecimal,
+    profitEth             BigDecimal,
+    profitDollar          BigDecimal,
+    withdrawEth           BigDecimal,
+    withdrawDollar        BigDecimal,
+    acccountBalance       BigDecimal
+}
+
+relationship OneToMany {
+	Investor to Investment{investorid} 
+}
+relationship OneToMany {
+	Investor to Summary{investorid} 
+}
+
+
+

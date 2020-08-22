@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.sudefi.app",
+      "nativeLanguage": "es"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "monolith",
+    "baseName": "sudefi",
+    "packageName": "com.sudefi.app",
+    "packageFolder": "com/sudefi/app",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "OTU1NmI2YmI5NzJmOWU0NTI0MTM1ZmM2N2QxOWVjNjVmNzNlMzcyNDM1OWQyN2NiY2Q1ZWY4ZjNhYTQxZmFlYjk4NDNhOTA3N2E2N2Q4YzQyNGZkMTQxMGY2ZTQxNDZlMTdjZWFlMDRkZmY3MTdlYWIwNzQwZDE3NWM0NTM1NjQ=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "cerulean",
+    "clientThemeVariant": "light",
+    "creationTimestamp": 1597199205238,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "es",
+    "languages": ["es"],
+    "blueprints": []
+  }
+}
